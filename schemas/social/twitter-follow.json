@@ -1,0 +1,15 @@
+{
+    "type" : "object",
+    "properties" : {
+        "twitterUserName" : {
+            "type" : "string",
+            "required" : "true"
+        },
+        "sharer" : {
+            "type" : "object",
+            "properties" : {
+                "userId" : "string"
+            }
+        }
+    }
+}
