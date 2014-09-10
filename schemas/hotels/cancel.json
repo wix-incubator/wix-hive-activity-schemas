@@ -3,67 +3,67 @@
     "properties" : {
         "cancelDate" : {
             "type" : "datetime",
-            "required" : "true"
+            "required" : true
         },
         "refund" : {
             "type" : "object",
-            "required" : "true",
+            "required" : true,
             "properties" : {
                 "kind" : {
                     "type" : "string",
                     "enum" : ["FULL", "PARTIAL", "NONE"],
-                    "required" : "true"
+                    "required" : true
                 },
                 "total" : {
                     "type" : "number",
-                    "required" : "true"
+                    "required" : true
                 },
                 "currency" : {
                     "type" : "string",
-                    "required" : "true"
+                    "required" : true
                 },
                 "notes" : {
                     "type" : "string"
                 },
                 "destination" : {
                     "type" : "string",
-                    "required": "true"
+                    "required": true
                 }
             }
         },
         "reservationId" : {
             "type": "string",
-            "required": "false"
+            "required": false
         },
         "guests" : {
             "type": "object",
-            "required": "true",
+            "required": true,
             "properties": {
                 "total" : {
                     "type" : "number",
-                    "required" : "true"
+                    "required" : true
                 },
                 "adults" : {
                     "type" : "number",
-                    "required" : "true"
+                    "required" : true
                 },
                 "children" : {
                     "type" : "number",
-                    "required" : "true"
+                    "required" : true
                 }
             }
         },
         "stay" : {
             "type": "object",
-            "required": "true",
+            "required": true,
             "properties": {
                 "checkin" : {
                     "type" : "datetime",
-                    "required" : "true"
+                    "required" : true
                 },
                 "checkout" : {
                     "type" : "datetime",
-                    "required" : "true"
+                    "required" : true
                 }
             }
         },
@@ -71,63 +71,63 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": "true",
+                "required": true,
                 "properties": {
                     "date" : {
                         "type" : "datetime",
-                        "required": "true"
+                        "required": true
                     },
                     "subtotal" : {
                         "type" : "number",
-                        "required": "true"
+                        "required": true
                     },
                     "taxes" : {
                         "type": "array",
                         "items": {
                             "type": "object",
-                            "required": "true",
+                            "required": true,
                             "properties": {
                                 "name" : {
                                     "type" : "string",
-                                    "required": "true"
+                                    "required": true
                                 },
                                 "total" : {
                                     "type" : "number",
-                                    "required": "true"
+                                    "required": true
                                 },
                                 "currency" : {
                                     "type" : "string",
-                                    "required": "true"
+                                    "required": true
                                 }
                             }
                         }
                     },
                     "total" : {
                         "type" : "number",
-                        "required": "true"
+                        "required": true
                     },
                     "currency" : {
                         "type" : "string",
-                        "required": "true"
+                        "required": true
                     }
                 }
             }
         },
         "invoice" : {
             "type": "object",
-            "required": "true",
+            "required": true,
             "properties": {
                 "subtotal" : {
                     "type" : "number",
-                    "required": "true"
+                    "required": true
                 },
                 "total" : {
                     "type" : "number",
-                    "required": "true"
+                    "required": true
                 },
                 "currency" : {
                     "type" : "string",
-                    "required": "true"
+                    "required": true
                 }
             }
         },
@@ -172,21 +172,21 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": "true",
+                "required": true,
                 "properties": {
                     "id" : {
                         "type": "string",
-                        "required": "false"
+                        "required": false
                     },
                     "beds": {
                         "type": "array",
                         "items": {
                             "type": "object",
-                            "required": "true",
+                            "required": true,
                             "properties": {
                                 "kind": {
                                     "type": "string",
-                                    "required": "true"
+                                    "required": true
                                 },
                                 "sleeps": {
                                     "type": "number"
@@ -195,14 +195,14 @@
                         }
                     },
                     "maxOccupancy": {
-                        "required": "true",
+                        "required": true,
                         "type": "number"
                     },
                     "amenities": {
                         "type": "array",
                         "items": {
                             "type": "string",
-                            "required": "true"
+                            "required": true
                         }
                     }
                 }
@@ -210,3 +210,4 @@
         }
     }
 }
+    

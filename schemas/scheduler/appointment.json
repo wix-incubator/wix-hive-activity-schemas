@@ -3,34 +3,34 @@
     "properties": {
         "title" : {
             "type" : "string",
-            "required" : "true"
+            "required" : true
         },
         "description" : {
             "type" : "string",
-            "required" : "true"
+            "required" : true
         },
         "location" : {
             "type" : "object",
             "properties": {
                 "address" : {
                     "type" : "string",
-                    "required" : "false"
+                    "required" : false
                 },
                 "city" : {
                     "type" : "string",
-                    "required" : "false"
+                    "required" : false
                 },
                 "region" : {
                     "type" : "string",
-                    "required" : "false"
+                    "required" : false
                 },
                 "postalCode" : {
                     "type" : "string",
-                    "required" : "false"
+                    "required" : false
                 },
                 "country" : {
                     "type" : "string",
-                    "required" : "false"
+                    "required" : false
                 },
                 "url" : {
                     "type" : "string"
@@ -42,15 +42,15 @@
             "properties": {
                 "start" : {
                     "type" : "datetime",
-                    "required" : "true"
+                    "required" : true
                 },
                 "end" : {
                     "type" : "datetime",
-                    "required" : "true"
+                    "required" : true
                 },
                 "timezone" : {
                     "type" : "string",
-                    "required" : "true"
+                    "required" : true
                 }
             }
         },

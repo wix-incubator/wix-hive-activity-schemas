@@ -3,7 +3,7 @@
     "properties" : {
         "action" : {
             "type" : "string",
-            "required" : "true",
+            "required" : true,
             "enum" : ["like", "recommend"]
         },
         "sharer" : {

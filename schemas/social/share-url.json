@@ -6,7 +6,7 @@
             "properties" : {
                 "url" : {
                     "type" : "string",
-                    "required" : "true"
+                    "required" : true
                 },
                 "text" : {
                     "type" : "string"
@@ -16,13 +16,13 @@
                     "properties" : {
                         "type" : {
                             "type" : "string",
-                            "required" : "true",
+                            "required" : true,
                             "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "MYSPACE", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "VK", "OTHER"]
                         },
                         "other" : {
                             "name" : {
                                 "type" : "string",
-                                "required" : "true"
+                                "required" : true
                             },
                             "metadata" : {
                                 "type" : "array",
@@ -31,11 +31,11 @@
                                     "properties" : {
                                         "property" : {
                                             "type" : "string",
-                                            "required" : "true"
+                                            "required" : true
                                         },
                                         "value" : {
                                             "type" : "string",
-                                            "required" : "true"
+                                            "required" : true
                                         }
                                     }
                                 }

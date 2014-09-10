@@ -3,7 +3,7 @@
     "properties" : {
         "twitterUserName" : {
             "type" : "string",
-            "required" : "true"
+            "required" : true
         },
         "sharer" : {
             "type" : "object",
