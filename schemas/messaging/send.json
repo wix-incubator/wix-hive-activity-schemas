@@ -13,7 +13,7 @@
                 "destination" : {
                     "type" : "object",
                     "properties": {
-                        "destination" : {
+                        "target" : {
                             "type" : "string",
                             "required" : "true"
                         },
