@@ -237,7 +237,9 @@
         "note": {
             "type": "string"
         },
-        "buyerAcceptsMarketing": null
+        "buyerAcceptsMarketing": {
+            "type": "boolean"
+        }
     }
 }
     
