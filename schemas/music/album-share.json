@@ -9,8 +9,19 @@
                     "required": true
                 },
                 "id" : {
-                    "type" : "string",
+                    "type" : "string"
+                }
+            }
+        },
+        "artist" : {
+            "type" : "object",
+            "properties" : {
+                "name": {
+                    "type": "string",
                     "required": true
+                },
+                "id" : {
+                    "type" : "string"
                 }
             }
         },

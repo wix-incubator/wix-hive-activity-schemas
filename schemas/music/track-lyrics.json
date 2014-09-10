@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+    "track" : {
+        "type" : "object",
+            "properties" : {
+            "name": {
+                "type": "string",
+                    "required": true
+            },
+            "id" : {
+                "type" : "string"
+            }
+        }
+    },
+    "album" : {
+        "type" : "object",
+            "properties" : {
+            "name": {
+                "type": "string",
+                    "required": false
+            },
+            "id" : {
+                "type" : "string"
+            }
+        }
+    },
+    "artist" : {
+        "type" : "object",
+            "properties" : {
+            "name": {
+                "type": "string",
+                    "required": true
+            },
+            "id" : {
+                "type" : "string"
+            }
+        }
+    }
+}
+}

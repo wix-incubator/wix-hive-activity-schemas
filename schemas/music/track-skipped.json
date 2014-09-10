@@ -9,8 +9,7 @@
                     "required": true
                 },
                 "id" : {
-                    "type" : "string",
-                    "required": true
+                    "type" : "string"
                 }
             }
         },
@@ -19,11 +18,22 @@
             "properties" : {
                 "name": {
                     "type": "string",
+                    "required": false
+                },
+                "id" : {
+                    "type" : "string"
+                }
+            }
+        },
+        "artist" : {
+            "type" : "object",
+            "properties" : {
+                "name": {
+                    "type": "string",
                     "required": true
                 },
                 "id" : {
-                    "type" : "string",
-                    "required": true
+                    "type" : "string"
                 }
             }
         }
