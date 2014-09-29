@@ -64,7 +64,7 @@
                     "items": {
                         "type": "object",
                         "properties" : {
-                            "property" : {
+                            "name" : {
                                 "type" : "string",
                                 "required" : true
                             },
