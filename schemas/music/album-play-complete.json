@@ -1,29 +1,30 @@
 {
     "type": "object",
     "properties": {
-    "album" : {
-        "type" : "object",
+        "album" : {
+            "type" : "object",
             "properties" : {
-            "name": {
-                "type": "string",
+                "name": {
+                    "type": "string",
                     "required": true
+                },
+                "id" : {
+                    "type" : "string"
+                }
             },
-            "id" : {
-                "type" : "string"
-            }
-        }
-    },
-    "artist" : {
-        "type" : "object",
+            "required": true
+        },
+        "artist" : {
+            "type" : "object",
             "properties" : {
-            "name": {
-                "type": "string",
+                "name": {
+                    "type": "string",
                     "required": true
-            },
-            "id" : {
-                "type" : "string"
+                },
+                "id" : {
+                    "type" : "string"
+                }
             }
         }
     }
-}
 }
