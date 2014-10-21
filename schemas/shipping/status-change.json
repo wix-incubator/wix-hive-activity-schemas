@@ -1,0 +1,134 @@
+{
+    "type": "object",
+    "properties": {
+        "orderId": {
+            "type": "string",
+            "required": true
+        },
+        "status": {
+            "required": true,
+            "enum": ["awaiting_shipment", "awaiting_payment", "awaiting_fulfillment", "awaiting_shipment", "partially_shipped"]
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "sku": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "quantity": {
+                        "type": "integer",
+                        "required": true
+                    },
+                    "price": {
+                        "type": "number"
+                    },
+                    "formattedPrice": {
+                        "type": "string"
+                    },
+                    "currency": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "productLink": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": true
+        },
+        "shippingDetails":{
+            "type": "object",
+            "properties": {
+                "method":{
+                    "type": "string",
+                    "required": false
+                },
+                "tracking": {
+                    "type": "string",
+                    "required": false
+                },
+                "shippingEstimate": {
+                    "type": "object",
+                    "properties": {
+                        "start": {
+                            "type": "date"
+                        },
+                        "end": {
+                            "type": "date"
+                        }
+                    },
+                    "required": false
+                },
+                "deliveryEstimate": {
+                    "type": "object",
+                    "properties": {
+                        "start": {
+                            "type": "date"
+                        },
+                        "end": {
+                            "type": "date"
+                        }
+                    },
+                    "required": false
+                }
+            }
+        },
+        "shippingAddress": {
+            "type": "object",
+            "properties": {
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "countryCode": {
+                    "type": "string"
+                },
+                "region": {
+                    "type": "string"
+                },
+                "regionCode": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "address1": {
+                    "type": "string"
+                },
+                "address2": {
+                    "type": "string"
+                },
+                "zip": {
+                    "type": "string"
+                },
+                "company": {
+                    "type": "string"
+                }
+            }
+        },
+        "note": {
+            "type": "string"
+        }
+    }
+}
