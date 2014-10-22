@@ -11,7 +11,8 @@
                 "id" : {
                     "type" : "string"
                 }
-            }
+            },
+            "required": true
         },
         "artist" : {
             "type" : "object",

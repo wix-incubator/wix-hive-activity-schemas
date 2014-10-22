@@ -11,14 +11,15 @@
                 "id" : {
                     "type" : "string"
                 }
-            }
+            },
+            "required": true
         },
         "album" : {
             "type" : "object",
             "properties" : {
                 "name": {
                     "type": "string",
-                    "required": false
+                    "required": true
                 },
                 "id" : {
                     "type" : "string"
