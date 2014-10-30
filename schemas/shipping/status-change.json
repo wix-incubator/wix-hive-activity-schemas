@@ -6,6 +6,7 @@
             "required": true
         },
         "status": {
+            "type": "string",
             "required": true,
             "enum": ["awaiting_shipment", "awaiting_payment", "awaiting_fulfillment", "partially_shipped"]
         },
