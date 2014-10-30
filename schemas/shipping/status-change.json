@@ -11,7 +11,7 @@
         },
         "items": {
             "type": "array",
-            "items": {
+            "item": {
                 "type": "object",
                 "properties": {
                     "id": {
