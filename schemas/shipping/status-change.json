@@ -7,7 +7,7 @@
         },
         "status": {
             "required": true,
-            "enum": ["awaiting_shipment", "awaiting_payment", "awaiting_fulfillment", "awaiting_shipment", "partially_shipped"]
+            "enum": ["awaiting_shipment", "awaiting_payment", "awaiting_fulfillment", "partially_shipped"]
         },
         "items": {
             "type": "array",
