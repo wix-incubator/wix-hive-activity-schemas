@@ -7,7 +7,7 @@
         },
         "items": {
             "type": "array",
-            "item": {
+            "items": {
                 "type": "object",
                 "properties": {
                     "id": {
