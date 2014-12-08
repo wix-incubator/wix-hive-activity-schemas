@@ -10,6 +10,7 @@
         },
         "items": {
             "type": "array",
+            "required": true,
             "item": {
                 "type": "object",
                 "properties": {
