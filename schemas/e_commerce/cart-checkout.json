@@ -13,6 +13,7 @@
             "required": true,
             "item": {
                 "type": "object",
+                "required": true,
                 "properties": {
                     "id": {
                         "type": "string",
