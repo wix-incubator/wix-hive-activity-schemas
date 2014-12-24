@@ -9,6 +9,26 @@
             "type" : "string",
             "required" : true
         },
+        "infoLink": {
+            "type": "string",
+            "required" : false
+        },
+        "price": {
+            "type" : "object",
+            "required": false,
+            "properties": {
+                "price": {
+                    "type": "number"
+                },
+                "formattedPrice": {
+                    "type": "string"
+                },
+                "currency": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
         "location" : {
             "type" : "object",
             "properties": {
