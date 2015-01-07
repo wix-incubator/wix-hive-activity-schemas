@@ -13,6 +13,11 @@
             "type" : "string",
             "required" : true
         },
+        "status": {
+            "type": "string",
+            "required": true,
+            "enum": ["RSVP", "event_details"]
+        },
         "infoLink": {
             "type": "string",
             "required" : false
@@ -30,6 +35,20 @@
                 "currency": {
                     "type": "string",
                     "required": true
+                }
+            }
+        },
+        "summary" : {
+            "type" : "object",
+            "properties": {
+                "going" : {
+                    "type" : "number"
+                },
+                "maybe" : {
+                    "type" : "number"
+                },
+                "invited" : {
+                    "type" : "number"
                 }
             }
         },
@@ -131,6 +150,11 @@
                     "kind" : {
                         "type" : "string",
                         "enum" : ["ADULT", "CHILD", "SENIOR"],
+                        "required" : true
+                    },
+                    "RSVP" : {
+                        "type" : "string",
+                        "enum" : ["YES", "NO", "MAYBE"],
                         "required" : true
                     }
                 }
