@@ -2,8 +2,7 @@
     "type" : "object",
     "properties": {
         "eventId" : {
-            "type": "string",
-            "required": false
+            "type": "string"
         },
         "title" : {
             "type" : "string",
@@ -16,15 +15,13 @@
         "status": {
             "type": "string",
             "required": true,
-            "enum": ["RSVP", "event_details"]
+            "enum": ["RSVP", "EVENT_DETAILS"]
         },
         "infoLink": {
-            "type": "string",
-            "required" : false
+            "type": "string"
         },
         "price": {
             "type" : "object",
-            "required": false,
             "properties": {
                 "price": {
                     "type": "number"
@@ -56,28 +53,22 @@
             "type" : "object",
             "properties": {
                 "name" : {
-                    "type" : "string",
-                    "required" : false
+                    "type" : "string"
                 },
                 "address" : {
-                    "type" : "string",
-                    "required" : false
+                    "type" : "string"
                 },
                 "city" : {
-                    "type" : "string",
-                    "required" : false
+                    "type" : "string"
                 },
                 "region" : {
-                    "type" : "string",
-                    "required" : false
+                    "type" : "string"
                 },
                 "postalCode" : {
-                    "type" : "string",
-                    "required" : false
+                    "type" : "string"
                 },
                 "country" : {
-                    "type" : "string",
-                    "required" : false
+                    "type" : "string"
                 },
                 "url" : {
                     "type" : "string"
@@ -107,12 +98,10 @@
                 "type" : "object",
                 "properties": {
                     "contactId" : {
-                        "type": "string",
-                        "required" : false
+                        "type": "string"
                     },
                     "name" : {
                         "type": "object",
-                        "required" : false,
                         "properties": {
                             "prefix": {
                                 "type": "string"
@@ -132,20 +121,16 @@
                         }
                     },
                     "phone" : {
-                        "type": "string",
-                        "required" : false
+                        "type": "string"
                     },
                     "email" : {
-                        "type": "string",
-                        "required" : false
+                        "type": "string"
                     },
                     "notes" : {
-                        "type": "string",
-                        "required" : false
+                        "type": "string"
                     },
                     "self" : {
-                        "type": "boolean",
-                        "required" : false
+                        "type": "boolean"
                     },
                     "kind" : {
                         "type" : "string",
@@ -156,6 +141,9 @@
                         "type" : "string",
                         "enum" : ["YES", "NO", "MAYBE"],
                         "required" : true
+                    },
+                    "guests" : {
+                        "type": "number"
                     }
                 }
             }
