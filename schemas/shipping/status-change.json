@@ -8,7 +8,7 @@
         "status": {
             "type": "string",
             "required": true,
-            "enum": ["AWAITING_SHIPMENT", "AWAITING_PAYMENT", "AWAITING_FULFILMENT", "PARTICALLY_SHIPPED"]
+            "enum": ["AWAITING_SHIPMENT", "AWAITING_PAYMENT", "AWAITING_FULFILMENT", "PARTIALLY_SHIPPED"]
         },
         "items": {
             "type": "array",
@@ -42,6 +42,43 @@
                     },
                     "productLink": {
                         "type": "string"
+                    },
+                    "variants": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string",
+                                    "required": true
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "categories": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "metadata": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "required": true
+                                },
+                                "value": {
+                                    "type": "string",
+                                    "required": true
+                                }
+                            }
+                        }
                     }
                 }
             },
