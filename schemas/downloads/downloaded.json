@@ -30,8 +30,7 @@
           "type": "string"
         },
         "currency": {
-          "type": "string",
-          "required": true
+          "type": "string"
         },
         "productLink": {
           "type": "string"
