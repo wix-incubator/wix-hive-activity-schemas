@@ -21,6 +21,10 @@
                         "type": "string",
                         "required": true
                     },
+                    "type": {
+                        "type": "string",
+                        "enum": ["PHYSICAL", "DIGITAL"]
+                    },
                     "sku": {
                         "type": "string"
                     },
