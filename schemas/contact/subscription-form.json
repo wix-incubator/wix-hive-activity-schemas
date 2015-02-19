@@ -1,58 +1,49 @@
 {
   "type": "object",
   "properties": {
-    "fields": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "prefix": {
+          "type": "string"
+        },
+        "first": {
+          "type": "string"
+        },
+        "middle": {
+          "type": "string"
+        },
+        "last": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        }
+      }
+    },
+    "phone": {
+      "type": "string",
+      "required": false
+    },
+    "metadata": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "email": {
+          "name": {
             "type": "string",
             "required": true
           },
-          "name" : {
-            "type": "object",
-            "properties": {
-              "prefix": {
-                "type": "string"
-              },
-              "first": {
-                "type": "string"
-              },
-              "middle": {
-                "type": "string"
-              },
-              "last": {
-                "type": "string"
-              },
-              "suffix": {
-                "type": "string"
-              }
-            }
-          },
-          "phone": {
+          "value": {
             "type": "string",
-            "required": false
-          },
-          "metadata" : {
-            "type" : "array",
-            "items": {
-              "type": "object",
-              "properties" : {
-                "name" : {
-                  "type" : "string",
-                  "required" : true
-                },
-                "value" : {
-                  "type" : "string",
-                  "required" : true
-                }
-              }
-            }
+            "required": true
           }
         }
-      },
-      "required": true
+      }
     }
   }
 }
