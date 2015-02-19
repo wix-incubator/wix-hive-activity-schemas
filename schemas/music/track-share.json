@@ -44,7 +44,9 @@
             "enum": [
                 "FACEBOOK",
                 "GOOGLE_PLUS",
-                "TWITTER"
+                "TWITTER",
+                "BLOGGER",
+                "TUMBLR"
             ],
             "required" : true
         }
