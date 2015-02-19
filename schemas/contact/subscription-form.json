@@ -29,7 +29,7 @@
       "type": "string",
       "required": false
     },
-    "metadata": {
+    "fields": {
       "type": "array",
       "items": {
         "type": "object",
