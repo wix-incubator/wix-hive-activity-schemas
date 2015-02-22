@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "initiatorId": {
+      "type": "string",
+      "required": true
+    },
+    "previousActivityStreamId": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
