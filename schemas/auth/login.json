@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "initiatorId": {
+    "initiator": {
       "type": "string",
       "required": true
     },

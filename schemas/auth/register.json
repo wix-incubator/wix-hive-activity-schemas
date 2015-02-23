@@ -1,13 +1,18 @@
 {
   "type": "object",
   "properties": {
-    "initiatorId": {
+    "initiator": {
       "type": "string",
       "required": true
     },
     "previousActivityStreamId": {
       "type": "string",
       "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "enum": ["APPLICANT", "ACTIVE", "INACTIVE", "DENIED"]
     }
   }
 }
