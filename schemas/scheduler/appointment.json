@@ -5,6 +5,11 @@
             "type": "string",
             "required": false
         },
+        "source" : {
+            "type": "string",
+            "enum" : ["GUEST", "STAFF"],
+            "required" : true
+        },
         "title" : {
             "type" : "string",
             "required" : true

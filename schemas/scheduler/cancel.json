@@ -5,13 +5,18 @@
             "type": "string",
             "required": false
         },
+        "source" : {
+            "type": "string",
+            "enum" : ["GUEST", "STAFF"],
+            "required" : true
+        },
         "cancelDate" : {
             "type" : "datetime",
             "required" : true
         },
         "refund" : {
             "type" : "object",
-            "required" : true,
+            "required" : false,
             "properties" : {
                 "kind" : {
                     "type" : "string",
