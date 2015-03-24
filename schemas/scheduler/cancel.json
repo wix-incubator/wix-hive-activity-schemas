@@ -5,6 +5,35 @@
             "type": "string",
             "required": false
         },
+        "cancelDate" : {
+            "type" : "datetime",
+            "required" : true
+        },
+        "refund" : {
+            "type" : "object",
+            "required" : true,
+            "properties" : {
+                "kind" : {
+                    "type" : "string",
+                    "enum" : ["FULL", "PARTIAL", "NONE"],
+                    "required" : true
+                },
+                "total" : {
+                    "type" : "number",
+                    "required" : true
+                },
+                "formattedTotal": {
+                    "type": "string"
+                },
+                "currency": {
+                    "type": "string",
+                    "required": true
+                },
+                "notes" : {
+                    "type" : "string"
+                }
+            }
+        },
         "title" : {
             "type" : "string",
             "required" : true
