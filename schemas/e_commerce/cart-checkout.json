@@ -6,6 +6,10 @@
             "required": true
         },
         "storeId": {
+            "type": "integer",
+            "required": true
+        },
+        "storeName": {
             "type": "string"
         },
         "items": {
