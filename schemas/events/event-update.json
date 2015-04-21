@@ -2,7 +2,8 @@
     "type" : "object",
     "properties": {
         "eventId" : {
-            "type": "string"
+            "type": "string",
+            "required" : true
         },
         "title" : {
             "type" : "string",
