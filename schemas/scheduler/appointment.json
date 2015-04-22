@@ -27,7 +27,8 @@
             "required": false,
             "properties": {
                 "price": {
-                    "type": "number"
+                    "type": "number",
+                    "required": true
                 },
                 "formattedPrice": {
                     "type": "string"
