@@ -145,7 +145,19 @@
                         "required" : true
                     },
                     "guests" : {
-                        "type": "number"
+                        "type": "object",
+                        "properties": {
+                            "amount": {
+                                "type": "number",
+                                "required" : true
+                            },
+                            "kind": {
+                                "type": "string",
+                                "enum" : ["ADULT", "CHILD", "SENIOR"],
+                                "required" : true
+                            }
+                        },
+                        "required" : false
                     }
                 }
             }
