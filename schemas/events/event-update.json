@@ -145,16 +145,23 @@
                         "required" : true
                     },
                     "guests" : {
-                        "type": "object",
-                        "properties": {
-                            "amount": {
-                                "type": "number",
-                                "required" : true
-                            },
-                            "kind": {
-                                "type": "string",
-                                "enum" : ["ADULT", "CHILD", "SENIOR"],
-                                "required" : true
+                        "type" : "array",
+                        "items" : {
+                            "type" : "object",
+                            "properties": {
+                                "amount": {
+                                    "type": "number",
+                                    "required": true
+                                },
+                                "kind": {
+                                    "type": "string",
+                                    "enum": [
+                                        "ADULT",
+                                        "CHILD",
+                                        "SENIOR"
+                                    ],
+                                    "required": true
+                                }
                             }
                         },
                         "required" : false
