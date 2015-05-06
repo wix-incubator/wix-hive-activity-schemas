@@ -1,0 +1,131 @@
+{
+    "type" : "object",
+    "properties": {
+        "appointmentId" : {
+            "type": "string",
+            "required": false
+        },
+        "source" : {
+            "type": "string",
+            "enum" : ["GUEST", "STAFF"],
+            "required" : true
+        },
+        "title" : {
+            "type" : "string",
+            "required" : true
+        },
+        "description" : {
+            "type" : "string",
+            "required" : true
+        },
+        "infoLink": {
+            "type": "string",
+            "required" : false
+        },
+        "price": {
+            "type" : "object",
+            "required": false,
+            "properties": {
+                "price": {
+                    "type": "number",
+                    "required": true
+                },
+                "formattedPrice": {
+                    "type": "string"
+                },
+                "currency": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+        "location" : {
+            "type" : "object",
+            "properties": {
+                "address" : {
+                    "type" : "string",
+                    "required" : false
+                },
+                "city" : {
+                    "type" : "string",
+                    "required" : false
+                },
+                "region" : {
+                    "type" : "string",
+                    "required" : false
+                },
+                "postalCode" : {
+                    "type" : "string",
+                    "required" : false
+                },
+                "country" : {
+                    "type" : "string",
+                    "required" : false
+                },
+                "url" : {
+                    "type" : "string"
+                }
+            }
+        },
+        "time" : {
+            "type" : "object",
+            "properties": {
+                "start" : {
+                    "type" : "datetime",
+                    "required" : true
+                },
+                "end" : {
+                    "type" : "datetime",
+                    "required" : true
+                },
+                "timezone" : {
+                    "type" : "string",
+                    "required" : true
+                }
+            }
+        },
+        "attendees" : {
+            "type" : "array",
+            "items" : {
+                "type" : "object",
+                "properties": {
+                    "contactId" : {
+                        "type": "string"
+                    },
+                    "name" : {
+                        "type": "object",
+                        "properties": {
+                            "prefix": {
+                                "type": "string"
+                            },
+                            "first": {
+                                "type": "string"
+                            },
+                            "middle": {
+                                "type": "string"
+                            },
+                            "last": {
+                                "type": "string"
+                            },
+                            "suffix": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "phone" : {
+                        "type": "string"
+                    },
+                    "email" : {
+                        "type": "string"
+                    },
+                    "notes" : {
+                        "type": "string"
+                    },
+                    "self" : {
+                        "type": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}
