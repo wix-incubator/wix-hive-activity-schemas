@@ -1,6 +1,15 @@
 {
     "type" : "object",
     "properties": {
+        "appointmentId" : {
+            "type": "string",
+            "required": false
+        },
+        "source" : {
+            "type": "string",
+            "enum" : ["GUEST", "STAFF"],
+            "required" : true
+        },
         "title" : {
             "type" : "string",
             "required" : true
@@ -8,6 +17,27 @@
         "description" : {
             "type" : "string",
             "required" : true
+        },
+        "infoLink": {
+            "type": "string",
+            "required" : false
+        },
+        "price": {
+            "type" : "object",
+            "required": false,
+            "properties": {
+                "price": {
+                    "type": "number",
+                    "required": true
+                },
+                "formattedPrice": {
+                    "type": "string"
+                },
+                "currency": {
+                    "type": "string",
+                    "required": true
+                }
+            }
         },
         "location" : {
             "type" : "object",
