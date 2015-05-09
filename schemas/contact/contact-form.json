@@ -1,9 +1,21 @@
 {
   "type": "object",
   "properties": {
-    "email": {
-      "type": "string",
-      "required": false
+    "emails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "required": true
+          },
+          "tag": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
     },
     "name": {
       "type": "object",
@@ -25,9 +37,21 @@
         }
       }
     },
-    "phone": {
-      "type": "string",
-      "required": false
+    "phones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "phone": {
+            "type": "string",
+            "required": true
+          },
+          "tag": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
     },
     "fields": {
       "type": "array",
