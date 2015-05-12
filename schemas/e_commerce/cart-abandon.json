@@ -23,6 +23,13 @@
                         "type": "string",
                         "required": true
                     },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "PHYSICAL",
+                            "DIGITAL"
+                        ]
+                    },
                     "sku": {
                         "type": "string"
                     },
@@ -74,7 +81,8 @@
                                     "type": "string"
                                 }
                             }
-                        }
+                        },
+                        "required": true
                     },
                     "categories": {
                         "type": "array",
