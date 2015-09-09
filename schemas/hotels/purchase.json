@@ -161,9 +161,6 @@
                                 "kind": {
                                     "type": "string",
                                     "required": true
-                                },
-                                "sleeps": {
-                                    "type": "number"
                                 }
                             }
                         }
