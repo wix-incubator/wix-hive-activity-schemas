@@ -3,7 +3,7 @@
     "properties": {
         "conversionType" : {
             "type": "string",
-            "enum" : ["PAGEVIEW", "PURCHASE", "UPGRADE", "LIKE", "FAN", "NONE", "COMMENT", "FOLLOW", "CLICK", "SUBSCRIBE", "CTA_CLICK", "EMAIL_OPEN"],
+            "enum" : ["PAGEVIEW", "PURCHASE", "UPGRADE", "LIKE", "COMMENT", "FOLLOW", "SUBSCRIBE", "CTA_CLICK", "EMAIL_OPEN", "OTHER"],
             "required" : true
         },
         "messageId" : {

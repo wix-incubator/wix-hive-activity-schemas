@@ -56,7 +56,7 @@
             "properties" : {
                 "conversionType" : {
                     "type": "string",
-                    "enum" : ["PAGEVIEW", "PURCHASE", "UPGRADE", "LIKE", "FAN", "NONE"],
+                    "enum" : ["PAGEVIEW", "PURCHASE", "UPGRADE", "LIKE", "COMMENT", "FOLLOW", "SUBSCRIBE", "CTA_CLICK", "EMAIL_OPEN", "OTHER"],
                     "required" : true
                 },
                 "metadata" : {
