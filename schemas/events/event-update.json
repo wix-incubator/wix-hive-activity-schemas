@@ -16,7 +16,7 @@
         "status": {
             "type": "string",
             "required": true,
-            "enum": ["RSVP", "EVENT_DETAILS"]
+            "enum": ["RSVP"]
         },
         "infoLink": {
             "type": "string"
