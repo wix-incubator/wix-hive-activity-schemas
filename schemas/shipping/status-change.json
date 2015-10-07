@@ -8,7 +8,7 @@
         "status": {
             "type": "string",
             "required": true,
-            "enum": ["AWAITING_SHIPMENT", "AWAITING_PAYMENT", "AWAITING_FULFILMENT", "PARTICALLY_SHIPPED"]
+            "enum": ["AWAITING_SHIPMENT", "AWAITING_PAYMENT", "AWAITING_FULFILMENT", "PARTIALLY_SHIPPED"]
         },
         "items": {
             "type": "array",
