@@ -17,7 +17,7 @@
                         "type" : {
                             "type" : "string",
                             "required" : true,
-                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "MYSPACE", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "VK", "OTHER"]
+                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
                         },
                         "other" : {
                             "name" : {
@@ -48,7 +48,9 @@
         "sharer" : {
             "type" : "object",
             "properties" : {
-                "userId" : "string"
+                "userId": {
+                    "type": "string"
+                }
             }
         }
     }
