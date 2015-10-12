@@ -1,0 +1,55 @@
+{
+    "type" : "object",
+    "properties" : {
+        "comment" : {
+            "type" : "object",
+            "properties" : {
+                "text" : {
+                    "type" : "string",
+                    "required" : true
+                }
+            }
+        },
+        "commenter" : {
+            "type" : "object",
+            "properties" : {
+                "openId": {
+                    "type": "object",
+                    "properties": {
+                        "userId": {
+                            "type" : "string"
+                        },
+                        "type" : {
+                            "type" : "string",
+                            "required" : true,
+                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+                        }
+                    }
+                },
+                "name": {
+                    "type": "object",
+                    "properties": {
+                        "prefix": {
+                            "type": "string"
+                        },
+                        "first": {
+                            "type": "string"
+                        },
+                        "middle": {
+                            "type": "string"
+                        },
+                        "last": {
+                            "type": "string"
+                        },
+                        "suffix": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
