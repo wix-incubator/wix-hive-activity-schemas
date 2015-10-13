@@ -1,63 +1,43 @@
 {
     "type" : "object",
     "properties" : {
-        "share" : {
-            "type" : "object",
-            "properties" : {
-                "url" : {
-                    "type" : "string",
-                    "required" : true
-                },
-                "text" : {
-                    "type" : "string"
-                },
-                "service" : {
-                    "type" : "object",
-                    "properties" : {
-                        "type" : {
-                            "type" : "string",
-                            "required" : true,
-                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
-                        },
-                        "other" : {
-                            "name" : {
-                                "type" : "string",
-                                "required" : true
-                            },
-                            "metadata" : {
-                                "type" : "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties" : {
-                                        "property" : {
-                                            "type" : "string",
-                                            "required" : true
-                                        },
-                                        "value" : {
-                                            "type" : "string",
-                                            "required" : true
-                                        }
-                                    }
-                                }
+            "url" : {
+                "type" : "string",
+                "required" : true
+            },
+            "text" : {
+                "type" : "string"
+            },
+            "service" : {
+                "type" : "object",
+                "properties" : {
+                    "type" : {
+                        "type" : "string",
+                        "required" : true,
+                        "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+                    },
+                    "openId": {
+                        "type": "object",
+                        "properties": {
+                            "userId": {
+                                "type" : "string"
                             }
                         }
-                    }
-                }
-            }
-        },
-        "sharer" : {
-            "type" : "object",
-            "properties" : {
-                "openId": {
-                    "type": "object",
-                    "properties": {
-                        "userId": {
-                            "type" : "string"
-                        },
-                        "type" : {
-                            "type" : "string",
-                            "required" : true,
-                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+                    },
+                    "metadata" : {
+                        "type" : "array",
+                        "items": {
+                            "type": "object",
+                            "properties" : {
+                                "property" : {
+                                    "type" : "string",
+                                    "required" : true
+                                },
+                                "value" : {
+                                    "type" : "string",
+                                    "required" : true
+                                }
+                            }
                         }
                     }
                 }
