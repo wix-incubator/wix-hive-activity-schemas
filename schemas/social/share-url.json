@@ -24,18 +24,18 @@
                             }
                         }
                     },
-                    "metadata" : {
-                        "type" : "array",
+                    "metadata": {
+                        "type": "array",
                         "items": {
                             "type": "object",
-                            "properties" : {
-                                "property" : {
-                                    "type" : "string",
-                                    "required" : true
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "required": true
                                 },
-                                "value" : {
-                                    "type" : "string",
-                                    "required" : true
+                                "value": {
+                                    "type": "string",
+                                    "required": true
                                 }
                             }
                         }
