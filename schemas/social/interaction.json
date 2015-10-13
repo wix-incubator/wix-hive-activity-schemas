@@ -1,0 +1,28 @@
+{
+    "type" : "object",
+    "properties" : {
+        "type" : {
+            "type" : "string",
+            "required" : true,
+            "enum" : ["LIKE", "FOLLOW", "SUBSCRIBE", "PIN_IT", "OTHER"]
+        },
+        "commenter" : {
+            "type" : "object",
+            "properties" : {
+                "openId": {
+                    "type": "object",
+                    "properties": {
+                        "userId": {
+                            "type" : "string"
+                        },
+                        "type" : {
+                            "type" : "string",
+                            "required" : true,
+                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
