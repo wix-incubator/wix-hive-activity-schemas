@@ -48,8 +48,18 @@
         "sharer" : {
             "type" : "object",
             "properties" : {
-                "userId": {
-                    "type": "string"
+                "openId": {
+                    "type": "object",
+                    "properties": {
+                        "userId": {
+                            "type" : "string"
+                        },
+                        "type" : {
+                            "type" : "string",
+                            "required" : true,
+                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+                        }
+                    }
                 }
             }
         }
