@@ -32,9 +32,6 @@
                 "openId": {
                     "type": "object",
                     "properties": {
-                        "userId": {
-                            "type" : "string"
-                        },
                         "type" : {
                             "type" : "string",
                             "required" : true,

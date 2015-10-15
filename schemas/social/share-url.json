@@ -16,13 +16,28 @@
                         "required" : true,
                         "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
                     },
-                    "openId": {
+                    "name": {
                         "type": "object",
                         "properties": {
-                            "userId": {
-                                "type" : "string"
+                            "prefix": {
+                                "type": "string"
+                            },
+                            "first": {
+                                "type": "string"
+                            },
+                            "middle": {
+                                "type": "string"
+                            },
+                            "last": {
+                                "type": "string"
+                            },
+                            "suffix": {
+                                "type": "string"
                             }
                         }
+                    },
+                    "email": {
+                        "type": "string"
                     },
                     "metadata": {
                         "type": "array",
