@@ -16,7 +16,6 @@
         "sharer" : {
             "type" : "object",
             "properties" : {
-
                 "name": {
                     "type": "object",
                     "properties": {
