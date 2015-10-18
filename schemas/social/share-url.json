@@ -1,59 +1,59 @@
 {
     "type" : "object",
     "properties" : {
-            "url" : {
-                "type" : "string",
-                "required" : true
-            },
-            "text" : {
-                "type" : "string"
-            },
-            "sharer" : {
-                "type" : "object",
-                "properties" : {
-                    "type" : {
-                        "type" : "string",
-                        "required" : true,
-                        "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
-                    },
-                    "name": {
-                        "type": "object",
-                        "properties": {
-                            "prefix": {
-                                "type": "string"
-                            },
-                            "first": {
-                                "type": "string"
-                            },
-                            "middle": {
-                                "type": "string"
-                            },
-                            "last": {
-                                "type": "string"
-                            },
-                            "suffix": {
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "email": {
-                        "type": "string"
-                    }
-                }
-            },
-            "metadata": {
-                "type": "array",
-                "items": {
+        "url" : {
+            "type" : "string",
+            "required" : true
+        },
+        "text" : {
+            "type" : "string"
+        },
+        "channel" : {
+            "type" : "string",
+            "required" : true,
+            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+        },
+        "sharer" : {
+            "type" : "object",
+            "properties" : {
+
+                "name": {
                     "type": "object",
                     "properties": {
-                        "name": {
-                            "type": "string",
-                            "required": true
+                        "prefix": {
+                            "type": "string"
                         },
-                        "value": {
-                            "type": "string",
-                            "required": true
+                        "first": {
+                            "type": "string"
+                        },
+                        "middle": {
+                            "type": "string"
+                        },
+                        "last": {
+                            "type": "string"
+                        },
+                        "suffix": {
+                            "type": "string"
                         }
+                    }
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "metadata": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "value": {
+                        "type": "string",
+                        "required": true
                     }
                 }
             }
