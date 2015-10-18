@@ -8,7 +8,7 @@
             "text" : {
                 "type" : "string"
             },
-            "service" : {
+            "sharer" : {
                 "type" : "object",
                 "properties" : {
                     "type" : {
@@ -38,21 +38,21 @@
                     },
                     "email": {
                         "type": "string"
-                    },
-                    "metadata": {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "name": {
-                                    "type": "string",
-                                    "required": true
-                                },
-                                "value": {
-                                    "type": "string",
-                                    "required": true
-                                }
-                            }
+                    }
+                }
+            },
+            "metadata": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "required": true
+                        },
+                        "value": {
+                            "type": "string",
+                            "required": true
                         }
                     }
                 }

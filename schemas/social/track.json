@@ -6,7 +6,7 @@
             "required" : true,
             "enum" : ["LIKE", "FOLLOW", "SUBSCRIBE", "PIN_IT", "OTHER"]
         },
-        "commenter" : {
+        "tracker" : {
             "type" : "object",
             "properties" : {
                 "openId": {
