@@ -4,7 +4,7 @@
         "type" : {
             "type" : "string",
             "required" : true,
-            "enum" : ["LIKE", "FOLLOW", "SUBSCRIBE", "PIN_IT", "OTHER"]
+            "enum" : ["LIKE", "FOLLOW", "SUBSCRIBE", "PIN_IT", "FAVORITE", "OTHER"]
         },
         "tracker" : {
             "type" : "object",
