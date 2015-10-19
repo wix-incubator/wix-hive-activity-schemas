@@ -8,7 +8,7 @@
         "channel" : {
             "type" : "string",
             "required" : true,
-            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+            "enum" : ["SITE", "FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
         },
         "metadata": {
             "type": "array",
@@ -29,6 +29,16 @@
         "commenter" : {
             "type" : "object",
             "properties" : {
+                "openId": {
+                    "type": "object",
+                    "properties": {
+                        "channel" : {
+                            "type" : "string",
+                            "required" : true,
+                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER", "NONE"]
+                        }
+                    }
+                },
                 "name": {
                     "type": "object",
                     "properties": {
