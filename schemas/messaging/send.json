@@ -7,7 +7,7 @@
             "properties": {
                 "method" : {
                     "type" : "string",
-                    "enum" : ["EMAIL", "SMS", "PHONE", "SOCIAL"],
+                    "enum" : ["EMAIL", "SMS", "PHONE", "SOCIAL", "CHAT"],
                     "required" : true
                 },
                 "destination" : {
