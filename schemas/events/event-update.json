@@ -94,7 +94,7 @@
                 }
             }
         },
-        "attendees" : {
+        "invitees" : {
             "type" : "array",
             "items" : {
                 "type" : "object",
