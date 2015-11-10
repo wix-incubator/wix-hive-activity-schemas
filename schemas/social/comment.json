@@ -1,0 +1,68 @@
+{
+    "type" : "object",
+    "properties" : {
+        "text" : {
+            "type" : "string",
+            "required" : true
+        },
+        "channel" : {
+            "type" : "string",
+            "required" : true,
+            "enum" : ["SITE", "FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+        },
+        "metadata": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "value": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
+            }
+        },
+        "commenter" : {
+            "type" : "object",
+            "properties" : {
+                "openId": {
+                    "type": "object",
+                    "properties": {
+                        "channel" : {
+                            "type" : "string",
+                            "required" : true,
+                            "enum" : ["FACEBOOK", "TWITTER", "LINKEDIN", "GOOGLE_PLUS", "PINTEREST", "INSTAGRAM", "TUMBLR", "BLOGGER", "WORDPRESS", "OTHER"]
+                        }
+                    }
+                },
+                "name": {
+                    "type": "object",
+                    "properties": {
+                        "prefix": {
+                            "type": "string"
+                        },
+                        "first": {
+                            "type": "string"
+                        },
+                        "middle": {
+                            "type": "string"
+                        },
+                        "last": {
+                            "type": "string"
+                        },
+                        "suffix": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
