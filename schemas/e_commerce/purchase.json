@@ -6,7 +6,7 @@
       "required": true
     },
     "storeId": {
-      "type": "integer",
+      "type": "string",
       "required": true
     },
     "storeName": {
