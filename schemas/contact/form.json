@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "properties": {
+    "type" : {
+      "type" : "string",
+      "enum" : ["CONTACT", "CUSTOMER_SATISFACTION", "SURVEY", "EVENT_REGISTRATION", "ORDER", "DONATION", "SUBSCRIPTION", "QUIZ", "SALES_LEAD", "OTHER"],
+      "required" : true
+    },
+    "emails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "required": true
+          },
+          "tag": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "prefix": {
+          "type": "string"
+        },
+        "first": {
+          "type": "string"
+        },
+        "middle": {
+          "type": "string"
+        },
+        "last": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        }
+      }
+    },
+    "phones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "phone": {
+            "type": "string",
+            "required": true
+          },
+          "tag": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    },
+    "addresses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tag": {
+            "type": "string",
+            "required": true
+          },
+          "address": {
+            "type": "string"
+          },
+          "neighborhood": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "postalCode": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "required": true
+          },
+          "value": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
