@@ -83,6 +83,10 @@
         }
       }
     },
+    "message" : {
+      "type" : "string",
+      "required" : false
+    },
     "fields": {
       "type": "array",
       "items": {
