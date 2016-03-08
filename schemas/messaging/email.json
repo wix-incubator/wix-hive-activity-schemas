@@ -1,0 +1,74 @@
+{
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "message": {
+          "type": "string",
+          "required": true
+        },
+        "media": {
+          "type": "array",
+          "required": false,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "messageId": {
+      "type": "string",
+      "required": true
+    },
+    "threadId": {
+      "type": "string",
+      "required": true
+    },
+    "linkedMessageId": {
+      "type": "string",
+      "required": false
+    },
+    "to": {
+      "type": "[string]",
+      "required": true
+    },
+    "cc": {
+      "type": "[string]",
+      "required": true
+    },
+    "subject": {
+      "type": "string",
+      "required": false
+    },
+    "replyTo": {
+      "type": "string",
+      "required": false
+    },
+    "direction": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "BUSINESS_TO_CUSTOMER",
+        "CUSTOMER_TO_BUSINESS"
+      ]
+    },
+    "metaData": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "required": true
+          },
+          "value": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}

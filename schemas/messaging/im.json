@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["CHAT","SMS"],
+      "required": true
+    },
+    "content" : {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "direction" : {
+            "type": "string",
+            "enum": ["BUSINESS_TO_CUSTOMER","CUSTOMER_TO_BUSINESS"],
+            "required": true
+          },
+          "time" : {
+            "type" : "datetime",
+            "required" : true
+          },
+          "message" : {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    },
+    "threadId": {
+      "type": "string",
+      "required": false
+    },
+    "metadata": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "required": true
+          },
+          "value": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
