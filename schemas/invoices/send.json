@@ -1,0 +1,216 @@
+{
+  "type": "object",
+  "properties": {
+    "invoiceId": {
+      "type": "string",
+      "required": true
+    },
+    "invoiceNumber": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": false
+    },
+    "currency": {
+      "type": "string",
+      "required": true
+    },
+    "issueDate": {
+      "type": "date",
+      "required": true
+    },
+    "dueDate": {
+      "type": "date",
+      "required": true
+    },
+    "orderId": {
+      "type": "string",
+      "required": false
+    },
+    "discountRate": {
+      "type": "number",
+      "required": false
+    },
+    "legalTerms": {
+      "type": "string",
+      "required": false
+    },
+    "payment": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "number",
+          "required": true
+        },
+        "subtotal": {
+          "type": "number",
+          "required": true
+        },
+        "formattedTotal": {
+          "type": "string"
+        },
+        "formattedSubtotal": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string",
+          "required": true
+        },
+        "coupon": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number",
+              "required": true
+            },
+            "formattedTotal": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "tax": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number",
+              "required": true
+            },
+            "formattedTotal": {
+              "type": "string"
+            }
+          }
+        },
+        "shipping": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number",
+              "required": true
+            },
+            "formattedTotal": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "required": true
+          },
+          "type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+              "PHYSICAL",
+              "DIGITAL"
+            ]
+          },
+          "sku": {
+            "type": "string",
+            "required": false
+          },
+          "title": {
+            "type": "string",
+            "required": false
+          },
+          "quantity": {
+            "type": "integer",
+            "required": true
+          },
+          "price": {
+            "type": "number",
+            "required": true
+          },
+          "formattedPrice": {
+            "required": true,
+            "type": "string"
+          },
+          "currency": {
+            "type": "string",
+            "required": true
+          },
+          "productLink": {
+            "required": false,
+            "type": "string"
+          },
+          "weight": {
+            "required": false,
+            "type": "number"
+          },
+          "formattedWeight": {
+            "required": false,
+            "type": "string"
+          },
+          "media": {
+            "type": "object",
+            "required": false,
+            "properties": {
+              "thumbnail": {
+                "type": "string"
+              }
+            }
+          },
+          "variants": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "required": true
+                },
+                "value": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": true
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metadata": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "required": true
+                },
+                "value": {
+                  "type": "string",
+                  "required": true
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": true
+    },
+    "paymentGateway": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}
+
