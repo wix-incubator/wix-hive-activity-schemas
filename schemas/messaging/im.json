@@ -24,6 +24,27 @@
           "message" : {
             "type": "string",
             "required": true
+          },
+          "media": {
+            "type": "array",
+            "required": false,
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "required": true
+                },
+                "contentType": {
+                  "type": "string",
+                  "required": false
+                },
+                "url": {
+                  "type": "string",
+                  "required": true
+                }
+              }
+            }
           }
         }
       }

@@ -13,7 +13,21 @@
           "type": "array",
           "required": false,
           "items": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "required": true
+              },
+              "contentType": {
+                "type": "string",
+                "required": false
+              },
+              "url": {
+                "type": "string",
+                "required": true
+              }
+            }
           }
         }
       }
