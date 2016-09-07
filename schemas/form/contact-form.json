@@ -25,7 +25,7 @@
               },
               "contentType": {
                 "type": "string",
-                "required": true
+                "required": false
               },
               "url": {
                 "type": "string",
