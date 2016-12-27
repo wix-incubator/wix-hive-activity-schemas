@@ -1,0 +1,152 @@
+{
+  "type": "object",
+  "properties": {
+    "restaurantId": {
+      "type": "string",
+      "required": true
+    },
+    "restaurantName": {
+      "type": "string",
+      "required": true
+    },
+    "orderId": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "required": true
+          },
+          "title": {
+            "type": "string",
+            "required": true
+          },
+          "quantity": {
+            "type": "integer",
+            "required": true
+          },
+          "price": {
+            "type": "number"
+          },
+          "formattedPrice": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string",
+            "required": true
+          },
+          "variants": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "required": true
+                },
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "id": "variant",
+                    "properties": {
+                      "title": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "value": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "$ref": "variant"
+                        }
+                      }
+                    }
+                  },
+                  "required": true
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": true
+    },
+    "payment": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "number",
+          "required": true
+        },
+        "subTotal": {
+          "type": "number",
+          "required": true
+        },
+        "formattedTotal": {
+          "type": "string"
+        },
+        "formattedSubTotal": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string",
+          "required": true
+        },
+        "coupons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "total": {
+                "type": "number",
+                "required": true
+              },
+              "formattedTotal": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string",
+                "required": true
+              }
+            }
+          }
+        },
+        "tax": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number",
+              "required": true
+            },
+            "formattedTotal": {
+              "type": "string"
+            }
+          }
+        },
+        "delivery": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number",
+              "required": true
+            },
+            "formattedTotal": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": true
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}
+
