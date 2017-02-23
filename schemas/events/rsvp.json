@@ -1,0 +1,63 @@
+{
+    "type": "object",
+    "properties": {
+        "eventId": {
+            "type": "string",
+            "required": true
+        },
+        "eventTitle": {
+            "type": "string",
+            "required": true
+        },
+        "eventDescription": {
+            "type": "string"
+        },
+        "totalNumberAttendees": {
+            "type": "number"
+        },
+        "price": {
+            "type": "object",
+            "properties": {
+                "price": {
+                    "type": "number",
+                    "required": true
+                },
+                "currency": {
+                    "type": "string",
+                    "required": true
+                },
+                "formattedPrice": {
+                    "type": "string"
+                }
+            }
+        },
+        "location": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+        "time": {
+            "type": "object",
+            "properties": {
+                "start": {
+                    "type": "datetime",
+                    "required": true
+                },
+                "end": {
+                    "type": "datetime"
+                },
+                "timeZone": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        }
+    }
+}
