@@ -9,143 +9,46 @@
       "type": "string",
       "required": true
     },
-    "orderId": {
+    "reservationId": {
       "type": "string",
       "required": true
     },
-    "items": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "required": true
-          },
-          "title": {
-            "type": "string",
-            "required": true
-          },
-          "quantity": {
-            "type": "integer",
-            "required": true
-          },
-          "price": {
-            "type": "number"
-          },
-          "formattedPrice": {
-            "type": "string"
-          },
-          "currency": {
-            "type": "string",
-            "required": true
-          },
-          "variants": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "title": {
-                  "type": "string",
-                  "required": true
-                },
-                "value": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "id": "variant",
-                    "properties": {
-                      "title": {
-                        "type": "string",
-                        "required": true
-                      },
-                      "value": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "$ref": "variant"
-                        }
-                      }
-                    }
-                  },
-                  "required": true
-                }
-              }
-            }
-          }
-        }
-      },
-      "required": true
-    },
-    "payment": {
+    "details": {
       "type": "object",
       "properties": {
-        "total": {
-          "type": "number",
-          "required": true
-        },
-        "subTotal": {
-          "type": "number",
-          "required": true
-        },
-        "formattedTotal": {
-          "type": "string"
-        },
-        "formattedSubTotal": {
-          "type": "string"
-        },
-        "currency": {
+        "date": {
           "type": "string",
           "required": true
         },
-        "coupons": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "total": {
-                "type": "number",
-                "required": true
-              },
-              "formattedTotal": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string",
-                "required": true
-              }
-            }
-          }
+        "time": {
+          "type": "string",
+          "required": true
         },
-        "tax": {
-          "type": "object",
-          "properties": {
-            "total": {
-              "type": "number",
-              "required": true
-            },
-            "formattedTotal": {
-              "type": "string"
-            }
-          }
+        "size": {
+          "type": "number",
+          "required": true
         },
-        "delivery": {
-          "type": "object",
-          "properties": {
-            "total": {
-              "type": "number",
-              "required": true
-            },
-            "formattedTotal": {
-              "type": "string"
-            }
-          }
+        "firstName": {
+          "type": "string",
+          "required": true
+        },
+        "lastName": {
+          "type": "string",
+          "required": true
+        },
+        "phone": {
+          "type": "string",
+          "required": true
+        },
+        "email": {
+          "type": "string",
+          "required": true
+        },
+        "requests": {
+          "type": "string"
         }
       },
       "required": true
-    },
-    "note": {
-      "type": "string"
     }
   }
 }
