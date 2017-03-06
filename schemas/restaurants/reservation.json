@@ -9,25 +9,30 @@
       "type": "string",
       "required": true
     },
+    "timezone": {
+      "type": "string",
+      "required": true
+    },
     "reservationId": {
       "type": "string",
       "required": true
     },
-    "details": {
+    "created": {
+      "type": "datetime"
+    },
+    "timeGuarantee": {
+      "type": "datetime"
+    },
+    "time": {
+      "type": "datetime",
+      "required": true
+    },
+    "heldUntil": {
+      "type": "datetime"
+    },
+    "contact": {
       "type": "object",
       "properties": {
-        "date": {
-          "type": "string",
-          "required": true
-        },
-        "time": {
-          "type": "string",
-          "required": true
-        },
-        "size": {
-          "type": "number",
-          "required": true
-        },
         "firstName": {
           "type": "string",
           "required": true
@@ -36,19 +41,30 @@
           "type": "string",
           "required": true
         },
-        "phone": {
-          "type": "string",
-          "required": true
-        },
         "email": {
           "type": "string",
           "required": true
         },
-        "requests": {
-          "type": "string"
+        "phone": {
+          "type": "string",
+          "required": true
         }
       },
       "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "partySize": {
+      "type": "number",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
     }
   }
 }
