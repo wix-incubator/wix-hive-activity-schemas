@@ -9,11 +9,11 @@
       "type": "string",
       "required": true
     },
-    "timezone": {
+    "reservationId": {
       "type": "string",
       "required": true
     },
-    "reservationId": {
+    "timezone": {
       "type": "string",
       "required": true
     },
@@ -21,7 +21,7 @@
       "type": "datetime"
     },
     "timeGuarantee": {
-      "type": "datetime"
+      "type": "string"
     },
     "time": {
       "type": "datetime",
