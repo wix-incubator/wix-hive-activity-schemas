@@ -13,10 +13,6 @@
       "type": "string",
       "required": true
     },
-    "timezone": {
-      "type": "string",
-      "required": true
-    },
     "created": {
       "type": "datetime"
     },
@@ -61,9 +57,6 @@
       "required": true
     },
     "comment": {
-      "type": "string"
-    },
-    "locale": {
       "type": "string"
     }
   }
