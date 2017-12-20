@@ -33,8 +33,7 @@
           "subtype": {
             "type": "string",
             "enum": [
-              "MUSIC_PURCHASE",
-              "VIDEO_PURCHASE"
+              "VIDEO_RENT"
             ]
           },
           "sku": {
@@ -120,26 +119,6 @@
     "payment": {
       "type": "object",
       "properties": {
-        "term": {
-          "type": "object",
-          "properties": {
-            "billingPeriod": {
-              "type": "string",
-              "required": true
-            },
-            "billingFrequency": {
-              "type": "number",
-              "required": true
-            },
-            "startDate": {
-              "type" : "datetime",
-              "required" : true
-            },
-            "endDate": {
-              "type" : "datetime"
-            }
-          }
-        },
         "total": {
           "type": "number",
           "required": true
@@ -300,3 +279,4 @@
     }
   }
 }
+    
