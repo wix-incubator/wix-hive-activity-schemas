@@ -27,15 +27,13 @@
           "type": {
             "type": "string",
             "enum": [
-              "PHYSICAL",
               "DIGITAL"
             ]
           },
           "subtype": {
             "type": "string",
             "enum": [
-              "VIDEO_PURCHASE",
-              "VIDEO_RENT"
+              "VIDEO_PURCHASE"
             ]
           },
           "sku": {
