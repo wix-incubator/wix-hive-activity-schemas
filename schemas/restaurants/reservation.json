@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "properties": {
+    "restaurantId": {
+      "type": "string",
+      "required": true
+    },
+    "restaurantName": {
+      "type": "string",
+      "required": true
+    },
+    "reservationId": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "timeGuarantee": {
+      "type": "string"
+    },
+    "time": {
+      "type": "datetime",
+      "required": true
+    },
+    "heldUntil": {
+      "type": "datetime"
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "required": true
+        },
+        "lastName": {
+          "type": "string",
+          "required": true
+        },
+        "email": {
+          "type": "string",
+          "required": true
+        },
+        "phone": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "partySize": {
+      "type": "number",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}
+
